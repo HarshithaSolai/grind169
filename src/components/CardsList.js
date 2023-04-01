@@ -85,7 +85,7 @@ const CardsList = () => {
                 {selectedCard.Problem}
               </div>
               <div className="back">
-                <p className='summary'>{selectedCard.Summary}</p>
+                <p className='summary' style={ { fontSize: '20px', maxHeight: '450px' } }>{selectedCard.Summary}</p>
                 <div className='additional'>
                   <div className='question'> <a href={selectedCard.Url} target="_blank" rel="noreferrer" onClick={handleLinkClick} >Open Question URL</a></div>
                   <div className='solution'> <a href={selectedCard.Solution} target="_blank" rel="noreferrer" onClick={handleLinkClick}>Open Solution</a></div>
